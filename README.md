@@ -13,7 +13,7 @@ memory controller实现了对array read/write/refresh的控制，其接口完成
   
 ### 1.3 **Block Diagram**
 
-![](top_module_block.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/top_module_block.png)
 
 ### 1.4 **Interface Description**
 
@@ -65,19 +65,19 @@ memory controller实现了对array read/write/refresh的控制，其接口完成
 
 Write without cross row
 
-![](top_wr_ncross.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/top_wr_ncross.png)
 
 Write with cross row
 
-![](top_wr_cross.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/top_wr_cross.png)
 
 Read without cross row
 
-![](top_rd_ncross.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/top_rd_ncross.png)
 
 Read with cross row
 
-![](top_rd_ncross.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/top_rd_ncross.png)
 
 ## 2. **axi\_slave**
 ### 2.1 **Function Description**
@@ -132,7 +132,7 @@ axi\_slave模块通过状态机来实现读写状态的仲裁。从IDLE状态跳
 
 
 
-![](axi_slave_fsm.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/axi_slave_fsm.png)
 
 axi\_slave 含有五个状态，具体描述如下：
 
@@ -150,19 +150,19 @@ axi\_slave 含有五个状态，具体描述如下：
 
 write with no cross row (len = 4)
 
-![](axi_slave_wr_nc.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/axi_slave_wr_nc.png)
 
 Write with cross row (len = 4)
 
-![](axi_slave_wr_c.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/axi_slave_wr_c.png)
 
 Read with no cross row (len = 4)
 
-![](axi_slave_rd_nc.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/axi_slave_rd_nc.png)
 
 Read with cross row 
 
-![](axi_slave_rd_c.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/axi_slave_rd_c.png)
 
 ## 3. **array\_ctrl**
 ### 3.1 **Function Description**
@@ -176,7 +176,7 @@ Read with cross row
   
 ### 3.3 **Block Diagram**
 
-![](array_ctrl_fsm.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/array_ctrl_fsm.png)
 
 模块array\_ctrl含有五个子模块。各子模块功能如下：
 
@@ -263,7 +263,7 @@ Read with cross row
 
 ### 3.5.4**FSM Diagram**
 
-![](fsm_fsm.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/fsm_fsm.png)
 
 本模块状态机含有五个状态。再IDLE状态下，刷新请求优先级最高。读操作请求（rd\_req）和写操作请求（wr\_req）取决于fifo中读取frame的读写标志。具体状态说明如下：
 
@@ -274,9 +274,9 @@ Read with cross row
 
 刷新时，时序图如下：
 
-![](rf_timging0.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/rf_timging0.png)
 
-![](rf_timging.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/rf_timging.png)
 
 ## 3.6 **array\_wr\_ctrl submodule**
 
@@ -316,7 +316,7 @@ Read with cross row
 
 ### **3.6.4 FSM Diagram**
 
-![](array_wr_ctrl_fsm.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/array_wr_ctrl_fsm.png)
 
 本模块含有七个状态，具体说明如下
 
@@ -332,20 +332,20 @@ Read with cross row
 
 **One data frame**
 
-![](array_wr_ctrl_timing_1.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/array_wr_ctrl_timing_1.png)
 
 **Continuous Frame**
 
-![](array_wr_ctrl_timing_2.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/array_wr_ctrl_timing_2.png)
 
 
 **Valid Discontinuous**
 
-![](array_wr_ctrl_timing_3.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/array_wr_ctrl_timing_3.png)
 
 **Cross Row**
 
-![](array_wr_ctrl_timing_4.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/array_wr_ctrl_timing_4.png)
 
 ## 3.7**array\_rd\_ctrl submodule**
 
@@ -387,7 +387,7 @@ Read with cross row
 
 ### **3.1.4 FSM Diagram**
 
-![](array_rd_ctrl_fsm.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/array_rd_ctrl_fsm.png)
 
 本模块含有七个状态，具体说明如下
 
@@ -408,15 +408,15 @@ Read with cross row
 
 No cross row
 
-![](array_rd_ctrl_timg1.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/array_rd_ctrl_timg1.png)
 
 4 data frame with cross row
 
-![](array_rd_ctrl_timg2.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/array_rd_ctrl_timg2.png)
 
 1 data frame
 
-![](array_rd_ctrl_timg3.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/array_rd_ctrl_timg3.png)
 
 ## 3.8**refresh\_task submodule**
 
@@ -446,7 +446,7 @@ No cross row
 
 **3.8.4 FSM Diagram**
 
-![](rf_fsm.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/rf_fsm.png)
 
 此模块状态机含有三个状态。
 
@@ -456,7 +456,7 @@ No cross row
 
 **3.8.5 Timing**
 
-![](rf_timing_x.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/rf_timing_x.png)
 
 1. **mc\_apb\_cfg**
 
