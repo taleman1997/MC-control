@@ -69,15 +69,15 @@ Write without cross row
 
 Write with cross row
 
-![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/top_wr_cross.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/top_wr_corss.png)
 
 Read without cross row
 
-![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/top_rd_ncross.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/top_rd_ncorss.png)
 
 Read with cross row
 
-![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/top_rd_ncross.png)
+![](https://github.com/taleman1997/MC-control/blob/main/mc_figures/top_rd_cross.png)
 
 ## 2. **axi\_slave**
 ### 2.1 **Function Description**
